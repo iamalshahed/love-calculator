@@ -1,1 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap');
+
 @import "tailwindcss";
+
+
+
+body{
+    @apply bg-black text-white w-full relative overflow-x-hidden;
+}
+
+
+
+/* customize */
+@theme{
+    /* fonts */
+    --font-eng: "Space Grotesk", sans-serif;
+    --font-bn: "Hind Siliguri", sans-serif;
+
+
+
+    /* colors & banckground */
+    --color-bg-second: #0A0A0A;
+    --color-bg-third: #1A1A1A;
+    --color-text-one: #7D7D7D;
+
+    /* box-shadow */
+    --shadow-one: 0px 0px 0px 1px rgba(255, 255, 255, 0.14), 0px 2px 2px 0px rgba(0, 0, 0, 0.04), 0px 8px 16px -4px rgba(0, 0, 0, 0.04);
+    --shadow-two: 0px 0px 0px 1px rgba(255, 255, 255, 0.14);
+}
