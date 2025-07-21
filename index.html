@@ -10,7 +10,40 @@
   </head>
   <body>
     
-    
+    <main class="page_center">
+
+      <form class="max-w-lg w-full p-4 sm:p-8 bg-bg-second rounded-xl shadow-one form_container">
+
+        <h1 class="text-center text-xl sm:text-2xl font-semibold text-neutral-400 flex items-center justify-center gap-1">
+          প্রেমের হিসাব - নিকাশ
+          <div class="">
+            <img class="w-8 h-auto" src="/heart.png" alt="heart">
+          </div>
+        </h1>
+
+        <!-- input group -->
+        <div class="input_group mt-6">
+
+          <div class="flex flex-col gap-2 mb-4 sm:mb-5">
+            <label for="my_name" class="input_label">তোমার নাম <span class="text-red-500">*</span></label>
+
+            <input type="text" name="my_name" id="my_name" class="input_field" placeholder="তোমার নাম লিখো" required>
+          </div>
+
+          <div class="flex flex-col gap-2 mb-4 sm:mb-5">
+            <label for="my_crush_name" class="input_label">তোমার ক্রাশের নাম <span class="text-red-500">*</span></label>
+
+            <input type="text" name="my_crush_name" id="my_crush_name" class="input_field" placeholder="তোমার ক্রাশের নাম লিখো" required>
+          </div>
+
+        </div>
+
+        <!-- submit -->
+        <button class="w-full h-10 bg-gray-200 rounded-md text-neutral-950 text-sm font-medium leading-tight cursor-pointer transition duration-300 ease-in-out hover:bg-gray-400" type="submit">দুই হৃদয়ের ম্যাচিং চেক করো</button>
+
+      </form>
+
+    </main>
 
 
 
