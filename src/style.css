@@ -1,70 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap");
 
 @import "tailwindcss";
 
-
-
-body{
-    @apply bg-black text-white w-full relative overflow-x-hidden font-bn;
+body {
+  @apply bg-black text-white w-full relative overflow-x-hidden font-bn;
 }
 
-@layer base{
-    img{
-        user-select: none;
-        pointer-events: none;
-    }
+@layer base {
+  img {
+    user-select: none;
+    pointer-events: none;
+  }
 
-    ::selection{
-        background: white;
-        color: black;
-    }
+  ::selection {
+    background: white;
+    color: black;
+  }
 }
 
-@layer utilities{
-    .page_center{
-        @apply flex items-center justify-center min-h-screen p-4;
-    }
+@layer utilities {
+  .page_center {
+    @apply flex items-center justify-center min-h-screen p-4;
+  }
 
-    .input_label{
-        @apply text-neutral-400 text-xs sm:text-base font-normal leading-normal;
-    }
+  .input_label {
+    @apply text-neutral-400 text-xs sm:text-base font-normal leading-normal;
+  }
 
-    .input_field{
-        @apply text-white text-sm sm:text-base font-normal w-full rounded-md shadow-two focus:shadow-inherit border-0 outline-0 focus:outline-2 focus:outline-text-one h-12 sm:h-14 px-4;
-    }
+  .input_field {
+    @apply text-white text-sm sm:text-base font-normal w-full rounded-md shadow-two focus:shadow-inherit border-0 outline-0 focus:outline-2 focus:outline-text-one h-12 sm:h-14 px-4;
+  }
 
-    .button_primary{
-        @apply w-full h-10 bg-gray-200 rounded-md text-neutral-950 text-sm font-medium leading-tight cursor-pointer transition duration-300 ease-in-out hover:bg-gray-400;
-    }
+  .button_primary {
+    @apply w-full h-10 bg-gray-200 rounded-md text-neutral-950 text-sm font-medium leading-tight cursor-pointer transition duration-300 ease-in-out hover:bg-gray-400;
+  }
 }
 
-@layer components{
-    .rpb_wrapper{
-        background: conic-gradient(#fff 0% 45%, #1a1a1a 15% 100%);
-        display: flex;
-        align-items: center;
-        justify-self: center;
-        padding: 1rem;
-        border-radius: 50%;
-    }
+@layer components {
+  .rpb_wrapper {
+    /* background: conic-gradient(#fff 0% 45%, #1a1a1a 15% 100%); */
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+    border-radius: 50%;
+  }
 }
-
-
 
 /* customize */
-@theme{
-    /* fonts */
-    --font-eng: "Space Grotesk", sans-serif;
-    --font-bn: "Hind Siliguri", sans-serif;
+@theme {
+  /* fonts */
+  --font-eng: "Space Grotesk", sans-serif;
+  --font-bn: "Hind Siliguri", sans-serif;
 
+  /* colors & banckground */
+  --color-bg-second: #0a0a0a;
+  --color-bg-third: #1a1a1a;
+  --color-text-one: #7d7d7d;
 
-
-    /* colors & banckground */
-    --color-bg-second: #0A0A0A;
-    --color-bg-third: #1A1A1A;
-    --color-text-one: #7D7D7D;
-
-    /* box-shadow */
-    --shadow-one: 0px 0px 0px 1px rgba(255, 255, 255, 0.14), 0px 2px 2px 0px rgba(0, 0, 0, 0.04), 0px 8px 16px -4px rgba(0, 0, 0, 0.04);
-    --shadow-two: 0px 0px 0px 1px rgba(255, 255, 255, 0.14);
+  /* box-shadow */
+  --shadow-one: 0px 0px 0px 1px rgba(255, 255, 255, 0.14),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.04), 0px 8px 16px -4px rgba(0, 0, 0, 0.04);
+  --shadow-two: 0px 0px 0px 1px rgba(255, 255, 255, 0.14);
 }

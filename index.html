@@ -14,7 +14,7 @@
 
       <!-- main form -->
        
-      <form class="max-w-lg w-full p-4 sm:p-8 bg-bg-second rounded-xl shadow-one">
+      <form class="max-w-lg w-full p-4 sm:p-8 bg-bg-second rounded-xl shadow-one" id="main_form">
 
         <h1 class="text-center text-xl sm:text-2xl font-semibold text-neutral-400 flex items-center justify-center gap-1">
           প্রেমের হিসাব - নিকাশ
@@ -41,27 +41,29 @@
         </div>
 
         <!-- submit -->
-        <button class="button_primary" type="submit">দুই হৃদয়ের ম্যাচিং চেক করো</button>
+        <button class="button_primary" id="calculate_btn" type="submit">দুই হৃদয়ের ম্যাচিং চেক করো</button>
 
       </form>
 
 
 
       <!-- user output -->
-      <div class="hidden">
+      <div class="hidden" id="user_result">
 
         <div class="max-w-lg w-full p-4 sm:px-8 sm:pt-8 bg-bg-second rounded-xl shadow-one">
 
           <div class="w-full text-center space-y-5">
-            <h2 class="text-neutral-400 text-sm sm:text-2xl font-semibold">ক্যালকুলেশন বলছে...</h2>
-            <p class="text-xl sm:text-2xl text-gray-200 font-semibold">test & sets</p>
-            <h3 class="text-base sm:text-2xl text-neutral-400 font-medium leading-relaxed">আমার ফ্রিজের পুরোনো খাবার - এ এর চেয়ে বেশি কেমিস্ট্রি আছে 🙂</h3>
+            <h2 class="text-neutral-400 text-sm sm:text-2xl font-semibold">শাহেদের ক্যালকুলেশন বলছে 🙂...</h2>
+
+            <p class="text-xl sm:text-2xl text-gray-200 font-semibold" id="mynamae_crush_name"></p>
+
+            <h3 class="text-base sm:text-2xl text-neutral-400 font-medium leading-relaxed" id="result_msg">আমার ফ্রিজের পুরোনো খাবার - এ এর চেয়ে বেশি কেমিস্ট্রি আছে 🙂</h3>
           </div>
 
           <div class="mt-8 w-full grid grid-cols-1 sm:grid-cols-2 items-center gap-8 sm:gap-4 justify-center sm:justify-between">
             <!-- left -->
             <div class="rpb_wrapper">
-              <div class="size-20 sm:size-40 bg-black text-white text-2xl sm:text-4xl font-normal rounded-full flex items-center justify-center">১৫%</div>
+              <div class="size-20 sm:size-40 bg-black text-white text-2xl sm:text-4xl font-normal rounded-full flex items-center justify-center" id="love_percentage">১৫%</div>
             </div>
             <!-- right -->
             <div class="border-r-red-200 grid justify-self-center">
@@ -71,7 +73,7 @@
 
           <!-- again button -->
           <div class="mt-4">
-            <button type="button" class="button_primary">আবার চেক মারো🙂</button>
+            <button type="button" class="button_primary" id="check_again">আবার চেক মারো 🙂</button>
           </div>
 
         </div>
