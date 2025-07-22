@@ -12,7 +12,9 @@
     
     <main class="page_center">
 
-      <form class="max-w-lg w-full p-4 sm:p-8 bg-bg-second rounded-xl shadow-one form_container">
+      <!-- main form -->
+       
+      <form class="max-w-lg w-full p-4 sm:p-8 bg-bg-second rounded-xl shadow-one">
 
         <h1 class="text-center text-xl sm:text-2xl font-semibold text-neutral-400 flex items-center justify-center gap-1">
           প্রেমের হিসাব - নিকাশ
@@ -39,17 +41,56 @@
         </div>
 
         <!-- submit -->
-        <button class="w-full h-10 bg-gray-200 rounded-md text-neutral-950 text-sm font-medium leading-tight cursor-pointer transition duration-300 ease-in-out hover:bg-gray-400" type="submit">দুই হৃদয়ের ম্যাচিং চেক করো</button>
+        <button class="button_primary" type="submit">দুই হৃদয়ের ম্যাচিং চেক করো</button>
 
       </form>
+
+
+
+      <!-- user output -->
+      <div class="hidden">
+
+        <div class="max-w-lg w-full p-4 sm:px-8 sm:pt-8 bg-bg-second rounded-xl shadow-one">
+
+          <div class="w-full text-center space-y-5">
+            <h2 class="text-neutral-400 text-sm sm:text-2xl font-semibold">ক্যালকুলেশন বলছে...</h2>
+            <p class="text-xl sm:text-2xl text-gray-200 font-semibold">test & sets</p>
+            <h3 class="text-base sm:text-2xl text-neutral-400 font-medium leading-relaxed">আমার ফ্রিজের পুরোনো খাবার - এ এর চেয়ে বেশি কেমিস্ট্রি আছে 🙂</h3>
+          </div>
+
+          <div class="mt-8 w-full grid grid-cols-1 sm:grid-cols-2 items-center gap-8 sm:gap-4 justify-center sm:justify-between">
+            <!-- left -->
+            <div class="rpb_wrapper">
+              <div class="size-20 sm:size-40 bg-black text-white text-2xl sm:text-4xl font-normal rounded-full flex items-center justify-center">১৫%</div>
+            </div>
+            <!-- right -->
+            <div class="border-r-red-200 grid justify-self-center">
+              <img class="hidden sm:flex sm:w-60 h-auto" src="/wedding.png" alt="wedding">
+            </div>
+          </div>
+
+          <!-- again button -->
+          <div class="mt-4">
+            <button type="button" class="button_primary">আবার চেক মারো🙂</button>
+          </div>
+
+        </div>
+
+        <div class="max-w-lg w-full py-2 px-4 text-center text-zinc-500 text-xs font-normal leading-tight">
+          <p>একই নাম দিলেও ফল ভিন্ন হবে, কারণ ১–১০০% পর্যন্ত র‍্যান্ডম ম্যাজিক! 🙂👍🏼</p>
+        </div>
+
+      </div>
 
     </main>
 
 
 
     <!-- footer -->
-    <footer class="w-full absolute bottom-4 right-0 text-center">
+    <footer class="w-full absolute bottom-2.5 right-0 text-center">
+
       <p class="text-zinc-500 text-xs font-eng font-normal leading-none">&copy; 2025, <a href="https://github.com/iamalshahed" target="_blank"><strong>AL Shahed</strong></a>. Licensed under the <a href="https://github.com/iamalshahed/love-calculator?tab=Apache-2.0-1-ov-file#readme" target="_blank" rel="noopener noreferrer"><strong>Apache License 2.0</strong></a></p>
+      
     </footer> 
 
 

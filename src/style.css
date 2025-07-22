@@ -32,6 +32,21 @@ body{
     .input_field{
         @apply text-white text-sm sm:text-base font-normal w-full rounded-md shadow-two focus:shadow-inherit border-0 outline-0 focus:outline-2 focus:outline-text-one h-12 sm:h-14 px-4;
     }
+
+    .button_primary{
+        @apply w-full h-10 bg-gray-200 rounded-md text-neutral-950 text-sm font-medium leading-tight cursor-pointer transition duration-300 ease-in-out hover:bg-gray-400;
+    }
+}
+
+@layer components{
+    .rpb_wrapper{
+        background: conic-gradient(#fff 0% 45%, #1a1a1a 15% 100%);
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        padding: 1rem;
+        border-radius: 50%;
+    }
 }
 
 
